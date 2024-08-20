@@ -1,6 +1,5 @@
 function solution(n) {
-    let arr = n.toString().split("").map(Number);
-    let answer = Number(arr.sort((a,b)=>b-a).join(""));
-    console.log(typeof answer);
+    let arr = n.toString().split("");
+    let answer = arr.sort().reverse().join("")*1;
     return answer;
 }
