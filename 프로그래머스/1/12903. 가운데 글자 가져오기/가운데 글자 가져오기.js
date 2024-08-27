@@ -1,7 +1,7 @@
 function solution(s) {
-  let answer =
-    s.length % 2 === 0
-      ? s.slice(s.length / 2 - 1, s.length / 2 + 1)
-      : s.slice((s.length - 1) / 2, (s.length - 1) / 2 + 1);
+  const mid = Math.floor(s.length / 2);
+  let answer = s.length % 2 === 0 ? s.slice(mid - 1, mid + 1) : s[mid];
   return answer;
 }
+
+console.log(solution("qwer"));
